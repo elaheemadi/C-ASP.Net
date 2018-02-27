@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/IhearCrm/UploadPic/myfile.aspx" hash="fffffff2060129db" filehash="55cd9cf8a506256d" flags="110000" assembly="App_Web_myfile.aspx.fbe4ade3" type="ASP.uploadpic_myfile_aspx">
+    <filedeps>
+        <filedep name="/IhearCrm/UploadPic/myfile.aspx" />
+        <filedep name="/IhearCrm/UploadPic/myfile.aspx.cs" />
+    </filedeps>
+</preserve>

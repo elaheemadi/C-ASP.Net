@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/IhearCrm/Module/send.ascx" hash="fffffff2060129db" filehash="64de5399814c88eb" flags="110000" assembly="App_Web_send.ascx.da180a27" type="ASP.module_send_ascx">
+    <filedeps>
+        <filedep name="/IhearCrm/Module/send.ascx" />
+        <filedep name="/IhearCrm/Module/send.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,100 @@
+﻿body {padding:0px;margin:0px;
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('fonts/Yekan.eot?#') format('eot'),  /* IE6–8 */
+       url('fonts/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('fonts/Yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+h1,h2,h3,h4,h5,h6,p,iuput,select,label,a,td,div,li,span,.btn{font-family:Yekan}
+#Header{width:100%;height:82px;float:right;background-color:#899AB7;background-image:url(images/headerpattern.jpg)}
+#Warp{width:100%;float:right;min-height:500px}
+#Right{width:15%;float:right;}
+#Content{width:100%;float:right;}
+#Footer{width:100%;height:70px;background-image:url(images/headerpattern.jpg);float:right}
+ .RadPanelBar .rpImage {
+    height: 19px;float:right
+}
+.RadPanelBar .rpLevel1 .rpImage {
+    height: 16px;float:right
+}
+.RadPanelBar .rpText{text-align:right}
+
+.RadPanelBar{direction:rtl}
+.rpTemplate{margin-top:20px}
+.item-list .col{float:right;border-bottom:1px solid black}
+.item-list,.send-box{
+     table-layout: fixed;
+  width: 100%;border-collapse: collapse;border-top:1px solid gray;
+
+    }
+.item-list td{white-space: nowrap;padding-top:10px;padding-bottom:10px;
+  overflow: hidden;
+  text-overflow: ellipsis;font-size:13px;font-weight:normal;display:table-cell;margin-top:0px;font-family:Tahoma;height:20px;}
+
+th.col{height:21px;padding-top:3px;padding-bottom:3px;}
+tr td{vertical-align:middle}
+.item-list .col-list-1 {width:10%;text-align:center
+}
+.item-list .col-list-2 {width:10%;
+}
+.item-list .col-list-3 {width:50%;
+}
+.item-list .col-list-4 {width:10%;text-align:center
+}
+.item-list .col-list-5 {width:10%;
+}
+.item-list .col-list-5{text-align:center}
+.item-list .col-list-2{text-align:right}
+.item-list .col-list-3{text-align:right}
+.chkSelect{padding:0px;margin-right:5px}
+.chkSelect input{padding:0px;margin:0px}
+.AlternatingItem td{background-color:#eeeaea}
+.item-list th.th{background-color:#89CB2B}
+.item-list .col-list-1 img{margin-left:5px}
+.send-box td{white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;font-size:11px;font-weight:normal;display:table-cell;margin-top:5px !important;font-family:Tahoma;}
+
+.send-box .col-list-1{}.send-box .col-list-1 img{margin-left:5px}
+.send-box .col-list-2{width:5%;text-align:left;overflow:hidden;}
+.send-box .col-list-3{width:75%;} .txtstyle3{width:70%;border:1px solid #6C9AD0;direction:rtl}
+.send-box  .col-list-4{width:98%;height:500px}
+a.messageto,a.messageto:visited{color:blue;}
+a.messageto{padding-top:5px;font-size:15px;}
+a.messagesend{font-size:15px}
+
+.editor{width:60%;margin:0px auto;border:1px solid red;overflow:hidden;text-align:center}
+.send-box .col-list-3 table{width:98%;margin:0px;margin-left:7px}
+.send-box tr.tr td{padding-top:5px}
+
+.rtIn{color:#ffffff}
+.lblresult{font-size:14px;}
+
+#Header ul{float:right;margin-top:20px}
+#Header ul li{float:right;margin-right:2px;padding-right:30px;height:35px;background-size:28px}
+#Header ul li a{font-size:14px}
+#Header ul li{background-image:url(images/newemail.gif);background-position:right top;background-repeat:no-repeat} 
+#Header ul li a{line-height:30px}
+#Header ul li.newmail{background-image:url(images/newemail.png)} 
+#Header ul li.inbox{background-image:url(images/inbox.png);}
+ 
+#Header ul li.send{background-image:url(images/sentitems.png);} 
+#Header ul li.exit{background-image:url(images/exit.png);} 
+#Header ul li.deletesend{background-image:url(images/deletesend.png);} 
+#Header ul li.deleterecive{background-image:url(images/deleterecive.png);} 
+#Header ul li a,#Header ul li a:visited{color:#F3F3F3}
+#Header ul li a:hover{color:red}
+a{text-decoration:none}
+#Header ul li a:active{color:red}
+
+.send-box .tdmembers{width:10%;}
+.memberList{direction:rtl;height:516px;max-height:100%;overflow:scroll;margin-right:9px}
+.memberList h4{background-color:#899AB7;text-align:center;display:block;width:100%;color:#FFE080}
+td.tdmembers{vertical-align:top;background-color:#0D6BA1}
+.send-box .col-list-1 h4{text-align:center;font-size:16px;color:#f5f011}
+
+ba.False,a.False:visited{color:blue;}
+.lbltext{text-align:right;float:right;margin-right:10px}
+
+label.visitFalse{color:red;}label.visitTrue{color:green;}

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/IhearCrm/Module/ViewMessage.ascx" hash="9bdbbc3f" filehash="1ac858af8425b3f4" flags="110000" assembly="App_Web_viewmessage.ascx.da180a27" type="ASP.module_viewmessage_ascx">
+    <filedeps>
+        <filedep name="/IhearCrm/Module/ViewMessage.ascx" />
+        <filedep name="/IhearCrm/Module/ViewMessage.ascx.cs" />
+    </filedeps>
+</preserve>

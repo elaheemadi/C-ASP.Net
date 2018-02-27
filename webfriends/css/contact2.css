@@ -1,0 +1,62 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700';
+html,
+body {
+background-color: dimgray;
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 5px, 12px, 15px, 12px;
+}
+.container {
+  background: #FFFFFF;
+  width: 900px;
+  height: 650px;
+  margin: 5% auto;
+  position: relative;
+}
+.container .map {
+  width: 45%;
+  float: left;
+}
+.container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+.container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+.container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+.container .contact-form input,
+.container .contact-form textarea {
+  width: 330px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+
+
+.container .contact-form .btn-send {
+  background: #A383C9;
+  width:80px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+ 
+}
+.btnsend{
+
+    background-image:url(../images/send.jpg);
+}

@@ -1,0 +1,169 @@
+﻿<error errorId="1d9a89ba-a04b-4c1b-a4dd-90bafdc14b18" application="/LM/W3SVC/4/ROOT" host="DESKTOP-QHC9VC4" type="System.Data.Entity.Infrastructure.UnintentionalCodeFirstException" message="Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception." source="App_Code.yizvsni3" detail="System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---&gt; System.Data.Entity.Infrastructure.UnintentionalCodeFirstException: Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception.&#xD;&#xA;   at IheariCrmEntities.OnModelCreating(DbModelBuilder modelBuilder) in d:\WEB\elicrm\App_Code\Model.Context.cs:line 25&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)&#xD;&#xA;   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)&#xD;&#xA;   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()&#xD;&#xA;   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()&#xD;&#xA;   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()&#xD;&#xA;   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)&#xD;&#xA;   at LoginManager.MemberID(String Bname) in d:\WEB\elicrm\App_Code\LoginManager.cs:line 53&#xD;&#xA;   at Module_ListItem.Page_Load(Object sender, EventArgs e) in d:\WEB\elicrm\Module\ListItem.ascx.cs:line 15&#xD;&#xA;   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)&#xD;&#xA;   at System.Web.UI.Control.OnLoad(EventArgs e)&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.HandleError(Exception e)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest()&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest(HttpContext context)&#xD;&#xA;   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\BHajian\AppData\Local\Temp\Temporary ASP.NET Files\vs\a88009fc\360dc\App_Web_szksl4ub.0.cs:line 0&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2017-09-13T19:01:49.4221648Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception.&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.Data.Entity.Infrastructure.UnintentionalCodeFirstException: Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;Line 23:     protected override void OnModelCreating(DbModelBuilder modelBuilder)&#xD;&#xA;Line 24:     {&#xD;&#xA;&lt;font color=red&gt;Line 25:         throw new UnintentionalCodeFirstException();&#xD;&#xA;&lt;/font&gt;Line 26:     }&#xD;&#xA;Line 27: &lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; d:\WEB\elicrm\App_Code\Model.Context.cs&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 25&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[UnintentionalCodeFirstException: Code generated using the T4 templates for Database First and Model First development may not work correctly if used in Code First mode. To continue using Database First or Model First ensure that the Entity Framework connection string is specified in the config file of executing application. To use these classes, that were generated from Database First or Model First, with Code First add any additional configuration using attributes or the DbModelBuilder API and then remove the code that throws this exception.]&#xD;&#xA;   IheariCrmEntities.OnModelCreating(DbModelBuilder modelBuilder) in d:\WEB\elicrm\App_Code\Model.Context.cs:25&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder() +380&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext) +16&#xD;&#xA;   System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input) +123&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.InitializeContext() +611&#xD;&#xA;   System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType) +18&#xD;&#xA;   System.Data.Entity.Internal.Linq.InternalSet`1.Initialize() +53&#xD;&#xA;   System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext() +15&#xD;&#xA;   System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider() +38&#xD;&#xA;   System.Linq.Queryable.Where(IQueryable`1 source, Expression`1 predicate) +83&#xD;&#xA;   LoginManager.MemberID(String Bname) in d:\WEB\elicrm\App_Code\LoginManager.cs:53&#xD;&#xA;   Module_ListItem.Page_Load(Object sender, EventArgs e) in d:\WEB\elicrm\Module\ListItem.ascx.cs:15&#xD;&#xA;   System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e) +51&#xD;&#xA;   System.Web.UI.Control.OnLoad(EventArgs e) +95&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +59&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +131&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +131&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +131&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +131&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +131&#xD;&#xA;   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +780&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:0&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:Whjcm1q=xMcKScRlImg=; ASP.NET_SessionId=dekblkc5nbfvddhgtv2vsmpn&#xD;&#xA;HTTP_HOST:localhost:1651&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 0&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: Whjcm1q=xMcKScRlImg=; ASP.NET_SessionId=dekblkc5nbfvddhgtv2vsmpn&#xD;&#xA;Host: localhost:1651&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\WEB\elicrm\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/default.aspx" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\WEB\elicrm\default.aspx" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="2458" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/default.aspx" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1651" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/default.aspx" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="Whjcm1q=xMcKScRlImg=; ASP.NET_SessionId=dekblkc5nbfvddhgtv2vsmpn" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:1651" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="Whjcm1q">
+      <value string="xMcKScRlImg=" />
+      <value string="xMcKScRlImg=" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="dekblkc5nbfvddhgtv2vsmpn" />
+    </item>
+  </cookies>
+</error>

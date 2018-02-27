@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Telerik.Web.UI;
+using System.IO;
+
+public partial class module_UploadPic_UploadPic : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    int? Namepic = null;
+    protected void AsyncUpload1_FileUploaded(object sender, FileUploadedEventArgs e)
+    {
+        if (e.IsValid)
+        {
+            Thumbnail.Width = Unit.Pixel(200);
+            Thumbnail.Height = Unit.Pixel(150);
+
+            byte[] imageData = new byte[e.File.InputStream.Length];
+
+            e.File.InputStream.Read(imageData, 0, (int)e.File.InputStream.Length);
+            Thumbnail.DataValue = imageData;
+
+            Namepic = RandomNumber(1000, 9000);
+
+            System.IO.FileStream file = System.IO.File.Create(Server.MapPath(".\\images\\" + Namepic + ".jpg "));
+           
+            CreateCookie(Namepic.ToString());
+            file.Write(imageData, 0, imageData.Length);
+            file.Close();
+            file.Dispose();
+
+            file.Flush();
+        }
+    }
+
+   // const int MaxTotalBytes = 1048576; // 1 MB
+    const int MaxTotalBytes = 40960; // 40kb
+    const int MinTotalBytes = 5120; // 5kb
+    long totalBytes;
+    public void RadAsyncUpload1_ValidatingFile(object sender, Telerik.Web.UI.Upload.ValidateFileEventArgs e)
+    {
+        if (totalBytes < MaxTotalBytes && totalBytes > 5120)
+        {
+            // Total bytes limit has not been reached, accept the file
+            e.IsValid = true;
+            totalBytes += e.UploadedFile.ContentLength;
+          
+        }
+        else
+        {
+            // Limit reached, discard the file
+            e.IsValid = false;
+        }
+    }
+    private int RandomNumber(int min, int max)
+    {
+        Random random = new Random();
+        return random.Next(min, max);
+    }
+
+    protected void CreateCookie(string val)
+    {
+        HttpCookie cookie = HttpContext.Current.Request.Cookies[LoginManager.EncodeTo64("uploadpic").Substring(1, 5)];
+        if (cookie == null)
+        {
+            HttpCookie cookie1 = new HttpCookie(LoginManager.EncodeTo64("uploadpic").Substring(1, 5), val);
+            cookie1.Expires = DateTime.Now.AddDays(1);
+            HttpContext.Current.Response.Cookies.Add(cookie1);
+
+
+        }
+        else {
+
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+            HttpCookie cookie1 = new HttpCookie(LoginManager.EncodeTo64("uploadpic").Substring(1, 5), val);
+            cookie1.Expires = DateTime.Now.AddDays(1);
+            HttpContext.Current.Response.Cookies.Add(cookie1);
+        }
+       
+    }
+    
+}

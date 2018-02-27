@@ -1,0 +1,40 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="UploadPic.ascx.cs" Inherits="module_UploadPic_UploadPic" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+ 
+  <%--  <asp:ScriptManager ID="ScriptManager1" runat="server" />--%>
+   <%-- <telerik:RadScriptManager ID="ScriptManager1" runat="server" />--%>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server" >
+        <AjaxSettings>
+            <telerik:AjaxSetting AjaxControlID="RadAjaxManager1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="Thumbnail" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+        </AjaxSettings>
+    </telerik:RadAjaxManager>
+
+    <script type="text/javascript">
+        function fileUploaded(sender, args) {
+            $find('ctl00_ctl00_ContentPlaceHolder1_leftcolumn_UploadPic1_RadAjaxManager1').ajaxRequest();
+            sender.deleteFileInputAt(0);
+        }
+        function validationFailed(sender, eventArgs) {
+            alert("خطا در ارسال فایل!");
+        } 
+    </script>
+
+    <div class="upload-panel">
+        <telerik:RadBinaryImage runat="server" Width="200px" Height="150px" ResizeMode="Fit"
+            ID="Thumbnail" ImageUrl="~/template/Miad/images/blank.png" />
+        <telerik:RadAsyncUpload AllowedFileExtensions="jpg,jpeg" 
+            AllowedMimeTypes="image/jpeg" MaxFileSize="30720" runat="server"
+            ID="AsyncUpload1" MaxFileInputsCount="1" OnClientFileUploaded="fileUploaded" 
+            OnFileUploaded="AsyncUpload1_FileUploaded" AutoAddFileInputs="false" OverwriteExistingFiles="True" 
+            ReadOnlyFileInputs="True" 
+            OnValidatingFile="RadAsyncUpload1_ValidatingFile"   
+            OnClientValidationFailed="validationFailed" TemporaryFileExpiration="00:00:02">
+            <Localization Select="ارسال تصویر" />
+        </telerik:RadAsyncUpload>
+        
+    </div>
+    

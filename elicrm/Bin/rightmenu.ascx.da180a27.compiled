@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/IhearCrm/Module/RightMenu.ascx" hash="fffffff2060129db" filehash="aadd50addfde11ee" flags="110000" assembly="App_Web_rightmenu.ascx.da180a27" type="ASP.module_rightmenu_ascx">
+    <filedeps>
+        <filedep name="/IhearCrm/Module/RightMenu.ascx" />
+        <filedep name="/IhearCrm/Module/RightMenu.ascx.cs" />
+    </filedeps>
+</preserve>

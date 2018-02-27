@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/IhearCrm/login.aspx" hash="fffffff2060129db" filehash="8021e703b3d0c0a4" flags="110000" assembly="App_Web_login.aspx.cdcab7d2" type="ASP.login_aspx">
+    <filedeps>
+        <filedep name="/IhearCrm/login.aspx" />
+        <filedep name="/IhearCrm/login.aspx.cs" />
+    </filedeps>
+</preserve>
